@@ -2,15 +2,20 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" media="all" />
-      <link href="https://fonts.googleapis.com/css?family=Alata:regular" rel="stylesheet" />
+    <link rel="stylesheet" href="homemedia.css" media="all" />
 
+    <link href="https://fonts.googleapis.com/css?family=Alata:regular" rel="stylesheet" />
+    <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>loopstudios</title>
 </head>
 
 <body>
+    <!-- header section start -->
     <header class="header">
-       
         <div class="header__container container">
             <nav class="header__nav">
                 <a href="#" class="header__logo">
@@ -20,33 +25,33 @@
                 <div class="header__links">
                     <ul class="header__links-box">
                         <li class="header__links-item">
-                            <a href="#">About</a>
+                            <a href="#" class="primaryWhite">About</a>
                         </li>
                         <li class="header__links-item">
-                            <a href="#">Careers</a>
+                            <a href="#" class="primaryWhite">Careers</a>
                         </li>
                         <li class="header__links-item">
-                            <a href="#">Events</a>
+                            <a href="#" class="primaryWhite">Events</a>
                         </li>
                         <li class="header__links-item">
-                            <a href="#">Products</a>
+                            <a href="#" class="primaryWhite">Products</a>
                         </li>
                         <li class="header__links-item">
-                            <a href="#">Support</a>
+                            <a href="#" class="primaryWhite">Support</a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
             <div class="header__hero">
-                <h1 class="header__hero-text">
+                <h1 class="primaryWhite">
                     Immersive experiences that deliver
                 </h1>
             </div>
         </div>
     </header>
 
-
+    <!-- feature section start -->
     <section class="feature">
         <div class="feature__container container container--middle">
             <div class="feature__image"></div>
@@ -63,9 +68,9 @@
         </div>
     </section>
 
-
+    <!-- creation section start -->
     <section class="creations">
-        <div class="creations__container container container--middle">
+        <div class="creations__container">
             <div class="creations__header">
                 <h2 class="creations__title">our creations</h2>
                 <button class="onlyDesktop">see all</button>
@@ -92,7 +97,7 @@
 
                 <div class="creations__grid__item grid">
                     <h3 class="creations__grid__item__title">
-                        the<br>grid
+                        the <br>grid
                     </h3>
                 </div>
 
@@ -116,15 +121,66 @@
 
                 <div class="creations__grid__item fisheye">
                     <h3 class="creations__grid__item__title">
-                        make it<br>fisheye
+                        make it fisheye
                     </h3>
                 </div>
             </div>
 
         </div>
     </section>
+    <!-- footer section start -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__container__group">
+                <img src="images/logo.svg" class="footer__logo" alt="logo">
 
+                <div class="footer__links">
+                    <ul class="footer__links__box">
+                        <li class="footer__links__item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Careers</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Events</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Products</a>
+                        </li>
+                        <li class="footer__links__item">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="footer__container__group">
+                <div class="footer__social">
+                    <a href="#" class="footer__social__item">
+                        <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+
+                    </a>
+
+                    <a href="#" class="footer__social__item">
+                        <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="footer__social__item">
+                        <i class="fab fa-pinterest fa-2x" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="#" class="footer__social__item">
+                        <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <p class="primaryDarkGray">
+                    © 2021 Loopstudios. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
