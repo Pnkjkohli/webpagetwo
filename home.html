@@ -21,7 +21,9 @@
                 <a href="#" class="header__logo">
                     <img src="images/logo.svg" alt="logo">
                 </a>
-
+                <div class="header__links onlimobile">
+                    <i class="fa fa-bars"></i>
+                </div>
                 <div class="header__links">
                     <ul class="header__links-box">
                         <li class="header__links-item">
@@ -51,10 +53,15 @@
         </div>
     </header>
 
-    <!-- feature section start -->
-    <section class="feature">
-        <div class="feature__container container container--middle">
-            <div class="feature__image"></div>
+    
+    <div class="allsection">
+
+
+       <section class="feature-main">
+        <div class="feature-section"> 
+            <img src="images/desktop/image-interactive.jpg" alt="">
+        </div>
+        <div class="feature__container">
             <div class="feature__description">
                 <h3 class="feature__description__title">
                     The leader in interactive VR
@@ -66,10 +73,72 @@
                 </p>
             </div>
         </div>
-    </section>
+       </section>
+     
 
-    <!-- creation section start -->
-    <section class="creations">
+       <section class="creations desktop">
+        <div class="creations__header">
+            <h2 class="creations__title">our creations</h2>
+            <button class="onlyDesktop">see all</button>
+        </div>
+        <div class="creations-grid">
+            <div class="creations-grid-box deep-earth">
+                <h3 class="creations__grid__item__title">
+                    deep earth
+                </h3>
+            </div>
+
+            <div class="creations-grid-box night-arcade">
+                <h3 class="creations__grid__item__title">
+                    night arcade
+                </h3>
+            </div>
+
+            <div class="creations-grid-box soccer-team">
+                <h3 class="creations__grid__item__title">
+                    soccer team vr
+                </h3>
+            </div>
+
+            <div class="creations-grid-box grid">
+                <h3 class="creations__grid__item__title">
+                    the <br>grid
+                </h3>
+            </div>
+
+            <div class="creations-grid-box from-above">
+                <h3 class="creations__grid__item__title">
+                    from up above vr
+                </h3>
+            </div>
+
+            <div class="creations-grid-box pocket-borealis">
+                <h3 class="creations__grid__item__title">
+                    pocket borealis
+                </h3>
+            </div>
+
+            <div class="creations-grid-box curiosity">
+                <h3 class="creations__grid__item__title">
+                    the curiosity
+                </h3>
+            </div>
+
+            <div class="creations-grid-box fisheye">
+                <h3 class="creations__grid__item__title">
+                    make it fisheye
+                </h3>
+            </div>
+            
+        </div>
+        <div class="creations__header">
+            <button class="onlimobile">see all</button>
+        </div>
+       </section>
+
+    </div>
+
+       <!-- <section class="creations">
         <div class="creations__container">
             <div class="creations__header">
                 <h2 class="creations__title">our creations</h2>
@@ -127,8 +196,9 @@
             </div>
 
         </div>
-    </section>
-    <!-- footer section start -->
+      </section> -->
+
+
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__container__group">
@@ -137,7 +207,7 @@
                 <div class="footer__links">
                     <ul class="footer__links__box">
                         <li class="footer__links__item">
-                            <a href="#">About</a>
+                            <a class="removepadding" href="#">About</a>
                         </li>
                         <li class="footer__links__item">
                             <a href="#">Careers</a>
@@ -155,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="footer__container__group">
+            <div class="footer__container__group__second">
                 <div class="footer__social">
                     <a href="#" class="footer__social__item">
                         <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
