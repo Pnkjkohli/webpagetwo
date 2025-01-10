@@ -37,12 +37,12 @@
         width: 100%;
         border: 2px solid #ffffff;
         padding: 20px;
-        margin: 90px 0px 0px 0px;
+        margin: 110px 0px 0px 0px;
         text-transform: uppercase;
     }
     .headerText h1{
         font-size: 32px;
-        font-weight: 300;
+        font-weight: 200;
         color: #ffffff;
     }
     .break{
@@ -53,7 +53,8 @@
 .SecondSection{
     display: flex;
     flex-direction: column;
-    margin: 0px;
+    /* margin: 0px; */
+    margin: 75px 0px 0px 0px;
     padding: 20px;
     position: static;
 
@@ -67,7 +68,7 @@
     position: relative;
     bottom: 0;
     right: 0;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
 .secondText h3{
@@ -84,7 +85,7 @@
     margin-top: 30px;
 }
 
-/* three section */
+/* third section */
 
 .creations{
     margin: 0px;
@@ -113,7 +114,6 @@
     background-repeat: no-repeat;
 }
 .creations__header{
-    padding: 50px 0 30px 0;
     display: flex;
     justify-content: center;
 }
@@ -139,11 +139,10 @@ button, .button {
     bottom: 14px;
     left: 16px;
     color: #ffffff;
-    max-width: 65%;
+    max-width: 42%;
     font-weight: 100;
     text-transform: uppercase;
     font-size: 27.2px;
-    /* margin: 0 0 15px 15px; */
 }
 
 .deep-earth{
@@ -180,46 +179,20 @@ button, .button {
     background-image: url(images/mobile/image-fisheye.jpg);
    
 }
+.mobile_creations__header {
+    padding: 10px 0 70px 0px;
+    display: flex;
+    justify-content: center;
+}
 /* footer */
+
+
 .footer{
-    background-color: #000;
-    padding: 0px;
+    display: none;
 }
-.footerText{
-  display: flex;
-  flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
-    gap: 30px;
+.mobile_footer{
+    display: block;
 }
-
-.footerLinksBox{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    list-style: none;
-}
-.footerLinksItem a{
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-.footer__social{
-    display: flex;
-    justify-content: end;
-    gap: 12px;
-}
-.footer__social__item{
-    color: #fff;
-    text-decoration: none;
-}
-.footerLoopstudios{
-    text-align: end;
-}
-
  }
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .main{
@@ -265,11 +238,14 @@ button, .button {
     }
     .headerText h1{
         font-size: 32px;
-        font-weight: 300;
+        font-weight: 200;
         color: #ffffff;
     }
     .break{
         display: block;
+    }
+    .break_that{
+        display: block; 
     }
 
     /* second section */
@@ -307,7 +283,7 @@ button, .button {
     margin-top: 30px;
 }
 
-/* three section */
+/* third section */
 
 .creations{
     margin: 0px;
@@ -366,7 +342,6 @@ button, .button {
     font-weight: 100;
     text-transform: uppercase;
     font-size: 27.2px;
-    /* margin: 0 0 15px 15px; */
 }
 
 .deep-earth{
@@ -404,6 +379,12 @@ button, .button {
    
 }
 /* footer */
+.mobile_footer{
+    display: block;
+}
+.footer{
+    display: none;
+}
 .footer{
     background-color: #000;
     padding: 0px;
@@ -504,7 +485,7 @@ button, .button {
     }
     .headerText h1{
         font-size: 52px;
-        font-weight: 300;
+        font-weight: 200;
         color: #ffffff;
     }
     .break{
@@ -643,6 +624,12 @@ button, .button {
    
 }
 /* footer */
+.mobile_footer{
+    display: block;
+}
+.footer{
+    display: none;
+}
 .footer{
     background-color: #000;
     padding: 0px;
@@ -732,7 +719,7 @@ button, .button {
     }
     .headerText h1{
         font-size: 64px;
-        font-weight: 300;
+        font-weight: 200;
         color: #ffffff;
     }
     /* second section */
@@ -770,6 +757,12 @@ button, .button {
     margin-top: 30px;
 }
 /* footer */
+.mobile_footer{
+    display: none;
+}
+.footer{
+    display: block;
+}
 .footer{
     background-color: #000;
     padding: 60px;
@@ -808,10 +801,15 @@ button, .button {
     text-align: end;
 }
  }
-@media (min-width: 1200px) and (max-width: 1399.98px){ 
-    
+@media (min-width: 1200px) and (max-width: 1440px){ 
+    .mobile_footer{
+        display: none;
+    }
+    .footer{
+        display: block;
+    }
  }
-@media (max-width: 1400px) {  }
+
 
 
 

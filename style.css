@@ -49,7 +49,7 @@
     /* color: white; */
     text-decoration: none;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
 }
 .headerText{
     margin-top: 60px;
@@ -61,7 +61,7 @@
 }
 .headerText h1{
     font-size: 64px;
-    font-weight: 300;
+    font-weight: 200;
     color: #ffffff;
 }
 .break{
@@ -98,7 +98,7 @@
     margin-top: 24px;
 }
 
-/* three section */
+/* third section */
 
 .creations{
     margin: 60px;
@@ -117,7 +117,6 @@
     padding: 20px 55px 0px 0px;
 }
 .creations-grid-box{
-    /* background-image: url(images/desktop/image-deep-earth.jpg); */
     background-position: right top, left top;
     position: relative;
     height: 360px;
@@ -125,7 +124,6 @@
     background-repeat: no-repeat;
 }
 .creations__header{
-    padding: 50px 0 30px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -157,7 +155,12 @@ button, .button {
     font-weight: 100;
     text-transform: uppercase;
     font-size: 27.2px;
-    /* margin: 0 0 15px 15px; */
+}
+
+.mobile_creations__header {
+    padding: 10px 0 70px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .deep-earth{
@@ -237,3 +240,53 @@ button, .button {
 .footerLoopstudios{
     text-align: end;
 }
+
+
+/* responsive footer */
+.mobile_footer{
+    background-color: #000;
+    padding-top: 40px;
+}
+
+.mobile_footerText{
+    display: flex;
+    flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0px;
+      gap: 30px;
+  }
+  
+  .mobile_footerLinksBox{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      list-style: none;
+  }
+  .moilbe_footerLinksItem a{
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 16px;
+  }
+  
+  .mobile_footer__social{
+      display: flex;
+      justify-content: end;
+      gap: 12px;
+  }
+  .mobile_footer__social__item{
+      color: #fff;
+      text-decoration: none;
+  }
+  .mobile_footerLoopstudios{
+      text-align: end;
+  } 
+  .mobile_footerText{
+    display: flex;
+    flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0px;
+      gap: 30px;
+  }
