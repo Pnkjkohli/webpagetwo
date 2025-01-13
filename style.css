@@ -46,14 +46,22 @@
     list-style: none;
 }
 .headerLinksItem a{
-    /* color: white; */
+    color: white;
     text-decoration: none;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
 }
+.headerLinksItem a:hover{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+
 .headerText{
     margin-top: 60px;
-    width: 60%;
+    width: 52%;
     border: 2px solid #ffffff;
     padding: 40px;
     margin: 60px 0px 0px 60px;
@@ -61,7 +69,7 @@
 }
 .headerText h1{
     font-size: 64px;
-    font-weight: 200;
+    font-weight: 300;
     color: #ffffff;
 }
 .break{
@@ -74,59 +82,96 @@
     flex-direction: row;
     margin: 60px;
     padding: 60px;
-    position: relative;
 
+}
+.SecondImg{
+    position: relative;
 }
 .secondText{
     background-color: #ffffff;
-    width: 50%;
+    width: 65%;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
-    padding: 90px;
+    bottom: -70px;
+    right: -290px;
+    padding: 100px 0px 70px 100px;
+
 }
 .secondText h3{
     font-size: 41.6px;
     font-weight: 300;
     text-transform: uppercase;
+    margin-bottom: 41px;
+
 }
 .secondText p{
     font-size: 14px;
     color: #8c8c8c;
     line-height: 1.5;
     font-weight: 400;
-    margin-top: 24px;
+    width: 410px;
 }
 
 /* third section */
 
-.creations{
+.creations {
     margin: 60px;
     padding: 60px;
- }
-.creations-heading{
+}
+
+.creations-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.creations-grid{
+
+.creations-grid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     gap: 18px;
     padding: 20px 55px 0px 0px;
 }
-.creations-grid-box{
-    background-position: right top, left top;
+
+.creations-grid-box {
     position: relative;
     height: 360px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: hidden;
 }
-.creations__header{
+
+.creations-grid-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center bottom;
+    transition: filter 0.3s ease-in-out;
+}
+
+.creations-grid-box:hover .creations-grid-image {
+    filter: blur(4px);
+}
+
+.creations__grid__item__title {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #ffffff;
+    max-width: 65%;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 30px;
+    z-index: 2;
+    /* pointer-events: none; */
+}
+
+.creations__header {
+    padding: 50px 0 30px 0;
     display: flex;
     justify-content: space-between;
 }
+
 button, .button {
     border: none;
     cursor: pointer;
@@ -138,23 +183,17 @@ button, .button {
     background-color: transparent;
     transition: all .3s ease-in-out;
 }
-.creations__title{
-    font-weight: 300;
-    font-size: 33.6px;
-    font-family:'Josefin Sans', sans-serif;
-    text-transform:uppercase;
+
+button:hover {
+    color: white;
+    background-color: #000;
 }
 
-
-.creations__grid__item__title{
-    position: absolute;
-    bottom: 14px;
-    left: 16px;
-    color: #ffffff;
-    max-width: 65%;
-    font-weight: 100;
+.creations__title {
+    font-weight: 300;
+    font-size: 33.6px;
+    font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 27.2px;
 }
 
 .mobile_creations__header {
@@ -163,44 +202,43 @@ button, .button {
     justify-content: center;
 }
 
-.deep-earth{
-    background-image: url(images/desktop/image-deep-earth.jpg);
-
-}
-
-.night-arcade{
-    background-image: url(images/desktop/image-night-arcade.jpg);
-   
-}
-
-.soccer-team{
-    background-image: url(images/desktop/image-soccer-team.jpg);
-   
-}
-.grid{
-    background-image: url(images/desktop/image-grid.jpg);
-   
-}
-.from-above{
-    background-image: url(images/desktop/image-from-above.jpg);
-   
-}
-.pocket-borealis{
-    background-image: url(images/desktop/image-pocket-borealis.jpg);
-   
-}
-.curiosity{
-    background-image: url(images/desktop/image-curiosity.jpg);
-   
-}
-.fisheye{
-    background-image: url(images/desktop/image-fisheye.jpg);
-   
-}
-
-.onlymobile{
+.onlymobile {
     display: none;
 }
+
+/* Background Images */
+.deep-earth .creations-grid-image {
+    background-image: url(images/desktop/image-deep-earth.jpg);
+}
+
+.night-arcade .creations-grid-image {
+    background-image: url(images/desktop/image-night-arcade.jpg);
+}
+
+.soccer-team .creations-grid-image {
+    background-image: url(images/desktop/image-soccer-team.jpg);
+}
+
+.grid .creations-grid-image {
+    background-image: url(images/desktop/image-grid.jpg);
+}
+
+.from-above .creations-grid-image {
+    background-image: url(images/desktop/image-from-above.jpg);
+}
+
+.pocket-borealis .creations-grid-image {
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+}
+
+.curiosity .creations-grid-image {
+    background-image: url(images/desktop/image-curiosity.jpg);
+}
+
+.fisheye .creations-grid-image {
+    background-image: url(images/desktop/image-fisheye.jpg);
+}
+
 
 /* footer */
 .footer{
@@ -227,7 +265,14 @@ button, .button {
     font-weight: 300;
     font-size: 16px;
 }
-
+.footerLinksItem a:hover{
+color: white;
+text-decoration: none;
+font-weight: 300;
+font-size: 16px;
+border-bottom: 2px solid #fff;
+padding-bottom: 5px;
+}
 .footer__social{
     display: flex;
     justify-content: end;
@@ -236,6 +281,13 @@ button, .button {
 .footer__social__item{
     color: #fff;
     text-decoration: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+.footer__social__item:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
 }
 .footerLoopstudios{
     text-align: end;
@@ -251,7 +303,7 @@ button, .button {
 .mobile_footerText{
     display: flex;
     flex-direction: column;
-      justify-content: space-between;
+      /* justify-content: space-between; */
       align-items: center;
       padding: 20px 0px;
       gap: 30px;
@@ -282,11 +334,4 @@ button, .button {
   .mobile_footerLoopstudios{
       text-align: end;
   } 
-  .mobile_footerText{
-    display: flex;
-    flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0px;
-      gap: 30px;
-  }
+
