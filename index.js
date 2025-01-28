@@ -12,3 +12,12 @@ function menuFunction() {
   document.getElementById("mobile_menu").style.display = "block";
   document.getElementById("main").style.backgroundColor = "black";
 }
+
+// hide mobile menu 
+document.getElementById("crossicon").addEventListener("click", function() {
+  document.getElementById("onlymobile").style.display = "block";
+  document.getElementById("crossicon").style.display = "none";
+  document.getElementById("headerText").style.display = "block";
+  document.getElementById("mobile_menu").style.display = "none";
+  document.getElementById("main").style.backgroundColor = "#00000066";
+});
