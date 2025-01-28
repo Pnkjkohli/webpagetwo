@@ -12,15 +12,20 @@
     <link rel="stylesheet" href="stylemedia.css">
 </head>
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <div class="mainContainer">
             <div class="mainLogo">
                 <img src="images/logo.svg" alt="logo">
             </div>
-            <div class="onlymobile">
+            <div class="onlymobile" id="onlymobile" onclick="menuFunction()">
                 <i class="fa fa-bars"></i>
             </div>
-            <div class="headerLinks">
+            <div id="crossicon" style="display: none; color:white">
+                <i class="fa fa-times"></i>
+            </div>
+            
+
+            <div class="headerLinks" id="headerLinks">
                 <ul class="headerLinksBox">
                     <li class="headerLinksItem">
                         <a href="#" class="primaryWhite">About</a>
@@ -40,7 +45,29 @@
                 </ul>
             </div>
         </div>
-        <div class="headerText">
+
+      <div id="mobile_menu" style="display: none;">
+        <ul class="mobile_headerLinksBox">
+            <li class="mobile_headerLinksItem">
+                <a href="#" class="primaryWhite">About</a>
+            </li>
+            <li class="headerLinksItem">
+                <a href="#" class="primaryWhite">Careers</a>
+            </li>
+            <li class="headerLinksItem">
+                <a href="#" class="primaryWhite">Events</a>
+            </li>
+            <li class="headerLinksItem">
+                <a href="#" class="primaryWhite">Products</a>
+            </li>
+            <li class="headerLinksItem">
+                <a href="#" class="primaryWhite">Support</a>
+            </li>
+        </ul>
+     </div>
+
+        <div class="headerText" id="headerText">
+            
             <h1>
                 Immersive
             </h1>
@@ -77,9 +104,10 @@
     <section class="creations desktop">
         <div class="creations__header">
             <h2 class="creations__title">our creations</h2>
-            <button class="onlyDesktop">see all</button>
+            <button class="onlyDesktop" onclick="addField()">see all</button>
         </div>
-        <div class="creations-grid">
+
+        <div class="creations-grid" id="contents">
             <div class="creations-grid-box deep-earth">
                 <div class="creations-grid-image"></div>
                 <h3 class="creations__grid__item__title">deep earth</h3>
@@ -120,6 +148,8 @@
                 <h3 class="creations__grid__item__title">make it fisheye</h3>
             </div>
         </div>
+
+        <div class="see_all_contents" id="see_all_contents"></div>
         <div class="mobile_creations__header">
             <button class="onlymobile mobile_creation">see all</button>
         </div>
@@ -237,5 +267,8 @@
        
     </div>
     </div>
+    <script src="index.js"></script>
 </body>
+
+
 </html>
