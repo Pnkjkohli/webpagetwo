@@ -1,28 +1,15 @@
 // see all button for third section
 document.getElementById("seeAllBtn").addEventListener("click", function() {
-  // var newcontents = document.getElementById("see_all_contents");
-  // var contents = document.getElementById("contents");
-  // newcontents.appendChild(contents.cloneNode(true));
   document.getElementById("see_all_contents").style.display = "block";
-// if(see_all_contents.style.display === "none"){
-//   this.innerHTML="See All";
-//   this.id="seeAllBtn";
-// }
-
-// else(see_all_contents.style.display === "block")
-// {
-
-//   this.innerHTML="View Less";
-//   this.id="viewLessBtn";
-//   document.getElementById("see_all_contents").style.display = "block";
-// }
-
   this.innerHTML="View Less";
   this.id="viewLessBtn";
   document.getElementById("viewLessBtn").addEventListener("click", function() {
+    document.getElementById("contents").innerHTML = document.getElementById("contents").innerHTML ;
     document.getElementById("see_all_contents").style.display = "none";
     this.innerHTML="See All";
       this.id="seeAllBtn";
+      location. reload(true)
+    
 
   });
 });

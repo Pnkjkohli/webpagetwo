@@ -257,6 +257,15 @@ button:hover {
 .fisheye .creations-grid-image {
     background-image: url(images/desktop/image-fisheye.jpg);
 }
+.left-car .creations-grid-image {
+    background-image: url(images/desktop/markus-spiske-2OCW4iBf2Vw-unsplash.jpg);
+}
+.car .creations-grid-image {
+    background-image: url(images/desktop/joao-pedro-freitas-BeyRebTHcwE-unsplash.jpg);
+}
+.cruis .creations-grid-image {
+    background-image: url(images/desktop/markus-spiske-zKvJXXbpsxI-unsplash.jpg);
+}
 
 
 /* footer */
