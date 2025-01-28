@@ -104,7 +104,7 @@
     <section class="creations desktop">
         <div class="creations__header">
             <h2 class="creations__title">our creations</h2>
-            <button class="onlyDesktop" onclick="addField()">see all</button>
+            <button class="onlyDesktop" id="seeAllBtn">see all</button>
         </div>
 
         <div class="creations-grid" id="contents">
@@ -149,7 +149,32 @@
             </div>
         </div>
 
-        <div class="see_all_contents" id="see_all_contents"></div>
+        <div class="see_all_contents" id="see_all_contents" style="display: none;">
+            <div class="creations-grid" id="contents">
+                <div class="creations-grid-box deep-earth">
+                    <div class="creations-grid-image"></div>
+                    <h3 class="creations__grid__item__title">deep earth</h3>
+                </div>
+        
+                <div class="creations-grid-box night-arcade">
+                    <div class="creations-grid-image"></div>
+                    <h3 class="creations__grid__item__title">night arcade</h3>
+                </div>
+        
+                <div class="creations-grid-box soccer-team">
+                    <div class="creations-grid-image"></div>
+                    <h3 class="creations__grid__item__title">soccer team vr</h3>
+                </div>
+        
+                <div class="creations-grid-box grid">
+                    <div class="creations-grid-image"></div>
+                    <h3 class="creations__grid__item__title">the <br>grid</h3>
+                </div>
+        
+          
+            </div>
+        </div>
+
         <div class="mobile_creations__header">
             <button class="onlymobile mobile_creation">see all</button>
         </div>

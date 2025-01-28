@@ -726,6 +726,15 @@ button, .button {
         font-weight: 200;
         color: #ffffff;
     }
+    #crossicon{
+display: none;
+    }
+    #headerLinks{
+        display: none;
+    }
+    #mobile_menu{
+        display: none;
+    }
     /* second section */
 .SecondSection{
     display: flex;
