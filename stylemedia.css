@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 575.98px) { 
     .main{
-        background-image: url(images/desktop/image-hero.jpg);
+        background-image: url(images/mobile/image-hero.jpg);
         width: 100vw;
         height: 500px;
         background-position: center;
@@ -184,6 +184,7 @@ button, .button {
     background-image: url(images/mobile/image-fisheye.jpg);
    
 }
+
 /* footer */
 .footer{
     display: none;
@@ -439,7 +440,7 @@ button, .button {
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: overlay;
-        background-color: #00000066;
+      background-color: #00000066!important;
         padding: 30px 45px;
     }
     .mainContainer{
@@ -452,7 +453,7 @@ button, .button {
     }
     
     .onlymobile{
-        display: block;
+        display: none;
     }
     .onlymobile i{
         font-size: 24px;
@@ -463,7 +464,7 @@ button, .button {
         width: 220px;
     }
     .headerLinks{
-        display: none;
+        display: block;
     }
 
     .headerLinksBox{
@@ -493,6 +494,15 @@ button, .button {
     }
     .break{
         display: block;
+    }
+
+
+
+    #mobile_menu{
+        display: none!important;
+    }
+    #crossicon{
+        display: none!important;
     }
 
     /* second section */
@@ -683,7 +693,7 @@ button, .button {
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: overlay;
-        background-color: #00000066;
+        background-color: #00000066!important;
         padding: 30px 0px;
     }
     .mainContainer{
@@ -727,13 +737,13 @@ button, .button {
         color: #ffffff;
     }
     #crossicon{
-display: none;
+display: none!important;
     }
-    #headerLinks{
+    /* #headerLinks{
         display: none;
-    }
+    } */
     #mobile_menu{
-        display: none;
+        display: none!important;
     }
     /* second section */
 .SecondSection{
@@ -816,6 +826,29 @@ display: none;
 }
  }
 @media (min-width: 1200px) and (max-width: 1440px){ 
+    .main{
+        background-image: url(images/desktop/image-hero.jpg);
+        width: 100vw;
+        height: auto;
+        background-position: center 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: #00000066!important;
+    }
+    .onlymobile{
+        display: none;
+    }
+    #crossicon{
+        display: none!important;
+            }
+            /* #headerLinks{
+                display: none;
+            } */
+            #mobile_menu{
+                display: none!important;
+            }
+
     .mobile_footer{
         display: none;
     }
